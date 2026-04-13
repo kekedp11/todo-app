@@ -1,0 +1,39 @@
+/* Reset & basic */
+* { box-sizing: border-box; margin:0; padding:0; font-family:'Poppins',sans-serif;}
+body { background:#f0f0f0; display:flex; justify-content:center; padding:50px; transition: background 0.3s; }
+.container { background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.1); width:100%; max-width:400px; transition: background 0.3s, color 0.3s; }
+h1 { text-align:center; margin-bottom:20px; }
+
+.input-group { display:flex; gap:10px; margin-bottom:20px; }
+#todo-input { flex:1; padding:10px; border-radius:5px; border:1px solid #ccc; }
+#add-btn { padding:10px 15px; border:none; background:#4caf50; color:white; border-radius:5px; cursor:pointer; }
+#add-btn:hover { background:#45a049; }
+
+.filter-group { display:flex; justify-content:center; gap:10px; margin-bottom:20px; }
+.filter-btn { padding:5px 10px; border:none; border-radius:5px; cursor:pointer; background:#2196f3; color:white; }
+.filter-btn:hover { background:#1976d2; }
+
+ul { list-style:none; }
+.todo-item { display:flex; justify-content:space-between; align-items:center; padding:10px; border-bottom:1px solid #eee; transition: background 0.3s; }
+.todo-item span.completed { text-decoration: line-through; color: gray; }
+
+.actions button { margin-left:5px; padding:5px 8px; border:none; border-radius:5px; cursor:pointer; }
+.actions .toggle-btn { background:#2196f3; color:white; }
+.actions .toggle-btn:hover { background:#1976d2; }
+.actions .delete-btn { background:#f44336; color:white; }
+.actions .delete-btn:hover { background:#d32f2f; }
+
+.footer { display:flex; justify-content:space-between; margin-top:20px; }
+#clear-btn { background:#f44336; color:white; border:none; padding:8px 12px; border-radius:5px; cursor:pointer; }
+#clear-btn:hover { background:#d32f2f; }
+#dark-toggle { background:#555; color:white; border:none; padding:8px 12px; border-radius:5px; cursor:pointer; }
+#dark-toggle:hover { background:#333; }
+
+/* Dark Mode */
+body.dark { background:#181818; color:#f0f0f0; }
+body.dark .container { background:#242424; color:#f0f0f0; }
+body.dark #todo-input { background:#333; color:white; border:1px solid #555; }
+body.dark .filter-btn { background:#555; color:white; }
+body.dark .filter-btn:hover { background:#777; }
+body.dark .actions .toggle-btn { background:#777; }
+body.dark .actions .delete-btn { background:#aa4444; }
